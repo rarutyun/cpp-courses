@@ -1,8 +1,3 @@
-// Check if swap() works correctly
-// Implement generic swap
-// Describe named requirements
-// Pointers as template arguments
-
 #include <iostream>
 
 struct A {
