@@ -8,6 +8,4 @@ static int my_static_func() {
     return 0;
 }
 
-
-
 #endif // MY_HEADER
