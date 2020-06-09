@@ -13,9 +13,9 @@ void no_auto_deduction(Arg a) {
 }
 
 int main() {
-    // my_struct s{1}; // wouldn`t compile (until C++17)
-    // my_struct<int> s{1};
+    my_struct s{1};
+    my_struct<int> s{1};
 
-    // no_auto_deduction(3); // wouldn`t compile (always)
+    no_auto_deduction(3);
     no_auto_deduction<char>(3);
 }
