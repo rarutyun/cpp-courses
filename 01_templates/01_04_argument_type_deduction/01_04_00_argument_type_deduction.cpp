@@ -10,7 +10,6 @@ int main() {
     int my_int{0};
     int& my_int_ref = my_int;
 
-
     std::cout << "my_int block:" << std::endl;
     func(my_int);
     ref_func(my_int);
