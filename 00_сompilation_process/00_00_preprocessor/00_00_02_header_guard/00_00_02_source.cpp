@@ -1,5 +1,5 @@
-#include "002_header_A.h"
-#include "002_header_B.h"
+#include "00_00_02_header_A.h"
+#include "00_00_02_header_B.h"
 
 int main() {
     int A_number = A_func();

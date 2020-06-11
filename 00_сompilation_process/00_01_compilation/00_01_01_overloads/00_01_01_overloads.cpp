@@ -1,5 +1,3 @@
-
-
 extern "C++" {
 double foo(int first) {}
 
