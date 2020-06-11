@@ -1,4 +1,3 @@
-
 extern int global_a;
 
 int main() {
