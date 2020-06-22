@@ -1,3 +1,5 @@
+// Work with header guards and without it
+
 #include "00_00_02_header_A.h"
 #include "00_00_02_header_B.h"
 

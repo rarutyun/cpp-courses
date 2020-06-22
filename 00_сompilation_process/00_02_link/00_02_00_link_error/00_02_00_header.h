@@ -5,4 +5,6 @@ int my_func() {
     return 5;
 }
 
+int bar();
+
 #endif // MY_HEADER

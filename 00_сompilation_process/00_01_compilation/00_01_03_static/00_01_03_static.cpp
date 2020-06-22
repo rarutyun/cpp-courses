@@ -1,3 +1,5 @@
+// Show the symbol table
+
 static void foo(int first) {}
 
 static void bar(int second) {}

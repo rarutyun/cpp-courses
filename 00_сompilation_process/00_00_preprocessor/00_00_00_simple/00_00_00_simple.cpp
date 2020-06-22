@@ -1,3 +1,5 @@
+// Show work of preprocessor
+
 #define MY_SIZE 10
 #define ONE 1
 int main() {
