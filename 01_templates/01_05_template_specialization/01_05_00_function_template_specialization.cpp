@@ -1,3 +1,8 @@
+// What is template specialization
+// Differencies between full and partial specialization
+// Cons of function partial specialization
+// How to get rid of function template specialization
+
 #include <iostream>
 
 template <typename T>

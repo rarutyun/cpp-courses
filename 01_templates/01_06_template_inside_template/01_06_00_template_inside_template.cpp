@@ -1,9 +1,11 @@
+// Is this sample compiles correctly?
+// What should we do if we want to pass any convertible type to some tempalte instance object?
+
 #include <iostream>
 
 template <typename U>
 struct A {
-    template <typename T>
-    void foo(T& t) {
+    void foo(U&) {
         std::cout << __PRETTY_FUNCTION__ << std::endl;
     }
 };

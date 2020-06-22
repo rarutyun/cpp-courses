@@ -1,3 +1,7 @@
+// Class templates
+// How can we use type template parameter inside the class
+// Does template argument size affects the class template size?
+
 #include <iostream>
 #include <vector>
 #include <string>

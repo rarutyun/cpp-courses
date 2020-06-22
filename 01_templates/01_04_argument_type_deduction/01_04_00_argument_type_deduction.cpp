@@ -1,3 +1,5 @@
+// Define the type deduction rules
+
 #include <iostream>
 
 template <typename T>

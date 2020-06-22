@@ -1,3 +1,7 @@
+// What is templates
+// Generic functions creation using templates
+// How templates works (instantiation)
+
 #include <iostream>
 #include <string>
 
