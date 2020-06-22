@@ -1,3 +1,7 @@
+// Check is anything works correctly
+// Talk about contracts (relations between required and provided interfaces)
+// Implement generic swap
+
 #include <iostream>
 
 struct A {
