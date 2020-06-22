@@ -1,3 +1,5 @@
+// Show the symbol table
+
 inline int foo() {
     return 0;
 }

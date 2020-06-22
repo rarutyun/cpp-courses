@@ -1,3 +1,5 @@
+// Show the symbol table
+
 extern int global_a;
 
 int main() {

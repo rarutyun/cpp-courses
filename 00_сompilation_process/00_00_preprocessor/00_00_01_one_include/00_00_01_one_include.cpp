@@ -1,3 +1,5 @@
+// Show work of preprocessor
+
 #include <iostream>
 
 int main() {

@@ -1,3 +1,5 @@
+// Show another way to resolve link error.
+
 #include "00_02_02_header.h"
 
 int bar();

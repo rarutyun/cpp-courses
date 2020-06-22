@@ -1,3 +1,5 @@
+// "Macro function" and difference between macro and function
+
 #include <iostream>
 #include <exception>
 
