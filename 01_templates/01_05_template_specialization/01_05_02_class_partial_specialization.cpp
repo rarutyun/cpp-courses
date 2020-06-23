@@ -1,3 +1,7 @@
+// Partial template specialization
+// Show specialization for reference
+// Show that full specialization is preferred
+
 #include <iostream>
 
 template <typename T1, typename T2>
