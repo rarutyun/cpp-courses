@@ -1,4 +1,4 @@
-// Describe different types of template parameters
+// Describe possible template parameters
 
 #include <iostream>
 #include <array>
