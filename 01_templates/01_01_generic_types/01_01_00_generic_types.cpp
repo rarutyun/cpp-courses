@@ -1,6 +1,6 @@
 // Class templates
 // How can we use type template parameter inside the class
-// Does template argument size affects the class template size?
+// Does template argument affects the class layout?
 
 #include <iostream>
 #include <vector>
@@ -37,6 +37,4 @@ int main() {
     m2 = foo<float>();
     m3 = foo<std::string>();
     m4 = foo<std::vector<int>>();
-
-    return 0;
 }

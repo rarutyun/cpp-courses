@@ -1,5 +1,5 @@
-// Is this sample compiles correctly?
-// What should we do if we want to pass any convertible type to some tempalte instance object?
+// Can foo() be called with such argument type?
+// Will adding an independent template help?
 
 #include <iostream>
 
