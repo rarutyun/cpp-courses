@@ -1,6 +1,5 @@
-// How to define class that inherited from template
-// How to define template that inherited from template
-// Check knowledge of ctor calls order
+// How to define a class that inherited from a template
+// How to define a template that inherited from a template
 
 #include <iostream>
 
