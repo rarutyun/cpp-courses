@@ -1,3 +1,6 @@
+// Full specialization of a class template
+// Full member function specialization of a class template
+
 #include <iostream>
 
 template <typename T>
