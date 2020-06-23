@@ -1,7 +1,4 @@
 // Define the cases in which type deduction is not present (mention C++17 CTAD)
-
-#include <cstdlib>
-
 template <typename T>
 struct my_struct {
     my_struct(T) {}
