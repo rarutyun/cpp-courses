@@ -1,5 +1,5 @@
-// Check is anything works correctly
-// Talk about contracts (relations between required and provided interfaces)
+// Check if swap() works correctly
+// Talk about contracts (type matching requirements)
 // Implement generic swap
 
 #include <iostream>
