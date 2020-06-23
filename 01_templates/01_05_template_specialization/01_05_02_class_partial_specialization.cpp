@@ -20,17 +20,6 @@ template <typename U>
 struct Z<U*> {
     Z() { std::cout << "I work with pointers" << std::endl; }
 };
-
-template <typename U>
-struct Z<U&> {
-    Z() { std::cout << "I work with reference" << std::endl; }
-};
-
-template <>
-struct Z<char&> {
-    Z() { std::cout << "I work with char reference" << std::endl; }
-};
-
 int main() {
     Z<int> z1{};
     Z<const int*> z2{};
