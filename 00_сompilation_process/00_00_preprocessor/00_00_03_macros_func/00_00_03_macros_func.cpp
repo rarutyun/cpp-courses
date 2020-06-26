@@ -1,4 +1,5 @@
-// "Macro function" and difference between macro and function
+// "Macro function" after preprocessing
+// Difference between macro and function
 
 #include <iostream>
 #include <exception>

@@ -1,4 +1,5 @@
 // Show work of preprocessor
+// What is placed after preprocessing?
 
 #include <iostream>
 

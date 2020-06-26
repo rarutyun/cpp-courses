@@ -1,3 +1,4 @@
+// How inline affect mangling?
 // Show the symbol table
 
 inline int foo() {
