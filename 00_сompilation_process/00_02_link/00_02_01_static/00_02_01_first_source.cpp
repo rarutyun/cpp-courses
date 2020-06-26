@@ -1,4 +1,5 @@
-// Resolve link error than show trap of static.
+// How to resolve link error with static.
+// Show specific of static.
 
 #include "00_02_01_header.h"
 

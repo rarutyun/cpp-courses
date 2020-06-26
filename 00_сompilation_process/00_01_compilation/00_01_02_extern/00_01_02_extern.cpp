@@ -1,3 +1,4 @@
+// How work extern for variables ?
 // Show the symbol table
 
 extern int global_a;

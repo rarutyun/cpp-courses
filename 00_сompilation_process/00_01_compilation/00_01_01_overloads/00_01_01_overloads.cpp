@@ -1,4 +1,6 @@
-// Show the symbol table than add extern "C" to function
+// What is mangling?
+// Show the symbol table
+// Show how work extern "C" to function
 
 double foo(int first) {}
 
