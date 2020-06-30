@@ -3,7 +3,7 @@
 #include <iostream>
 
 inline int my_func() {
-    void* fp = reinterpret_cast<void*>(&my_static_func);
+    void* fp = reinterpret_cast<void*>(&my_func);
     std::cout << fp << std::endl;
     return 0;
 }
