@@ -4,7 +4,6 @@
 
 int main() {
     int number = my_func();
-    bar();
 
     return 0;
 }

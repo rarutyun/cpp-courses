@@ -6,7 +6,7 @@
 int bar();
 
 int main() {
-    int number = my_static_func();
+    int number = my_func();
 
     bar();
 
