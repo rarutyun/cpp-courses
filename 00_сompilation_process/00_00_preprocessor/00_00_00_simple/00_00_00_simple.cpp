@@ -1,6 +1,6 @@
-// Show work of preprocessor
+// Show work of preprocessor(use -E)
 // What is removed after preprocessing?
-// What is placed after preprocessing?
+// What does remain after preprocessing?
 
 #define MY_SIZE 10
 #define ONE 1

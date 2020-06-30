@@ -1,5 +1,5 @@
-// Show work of preprocessor
-// What is placed after preprocessing?
+// Show include substitution(use -E)
+``
 
 #include <iostream>
 

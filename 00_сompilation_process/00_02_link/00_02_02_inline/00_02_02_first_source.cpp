@@ -1,5 +1,5 @@
 // How to resolve link error with inline.
-// Show specific of inline.
+// Show address of inline function.
 
 #include "00_02_02_header.h"
 
