@@ -1,5 +1,5 @@
 // How to resolve link error with static.
-// Show specific of static.
+// Show address of static function.
 
 #include "00_02_01_header.h"
 

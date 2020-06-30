@@ -1,5 +1,4 @@
-// How inline affect mangling?
-// Show the symbol table
+// How does inline work?
 
 inline int foo() {
     return 0;

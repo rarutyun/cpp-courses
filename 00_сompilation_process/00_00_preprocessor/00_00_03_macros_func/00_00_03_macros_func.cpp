@@ -1,5 +1,9 @@
-// "Macro function" after preprocessing
+// "Macro function" after preprocessing(use -E)
 // Difference between macro and function
+// - address
+// - call
+// - static type checking
+// - expression evaluation
 
 #include <iostream>
 #include <exception>

@@ -1,5 +1,4 @@
-// How static affect mangling?
-// Show the symbol table
+// How does static work?
 
 static void foo(int first) {}
 

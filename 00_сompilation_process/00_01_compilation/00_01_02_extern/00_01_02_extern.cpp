@@ -1,5 +1,5 @@
-// How work extern for variables ?
-// Show the symbol table
+// How does extern work for variables ?
+// Show the symbol table(use nm)
 
 extern int global_a;
 

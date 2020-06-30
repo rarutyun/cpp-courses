@@ -2,7 +2,7 @@
 #define MY_HEADER
 #include <iostream>
 
-inline int my_static_func() {
+inline int my_func() {
     void* fp = reinterpret_cast<void*>(&my_static_func);
     std::cout << fp << std::endl;
     return 0;
