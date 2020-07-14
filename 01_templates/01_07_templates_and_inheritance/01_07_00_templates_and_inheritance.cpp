@@ -1,5 +1,6 @@
 // How to define a class that inherited from a template
 // How to define a template that inherited from a template
+// Derived class becomes template if base class remains template as well
 
 #include <iostream>
 

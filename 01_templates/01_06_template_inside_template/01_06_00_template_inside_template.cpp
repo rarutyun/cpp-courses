@@ -1,5 +1,5 @@
-// Can foo() be called with such argument type?
-// Will adding an independent template help?
+// What is the argument type of the foo()?
+// Independent template parameter
 
 #include <iostream>
 
@@ -12,6 +12,6 @@ struct A {
 
 int main() {
     A<char> a;
-    const int z = 3;
+    int z = 3;
     a.foo(z);
 }
