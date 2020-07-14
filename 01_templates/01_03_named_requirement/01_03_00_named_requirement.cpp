@@ -1,6 +1,7 @@
 // Check if swap() works correctly
-// Talk about contracts (type matching requirements)
 // Implement generic swap
+// Describe named requirements
+// Pointers as template arguments
 
 #include <iostream>
 
