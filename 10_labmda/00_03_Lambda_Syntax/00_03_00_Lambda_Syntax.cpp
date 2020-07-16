@@ -1,3 +1,5 @@
+// Tell from which blocks lambdas are built without going into details.
+
 #include <iostream>
 
 int main() {

@@ -1,3 +1,5 @@
+// Compile this to O3 and do performance comparisons.
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

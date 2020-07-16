@@ -1,3 +1,6 @@
+// What is callable?
+// How were algorithms used in c ++ before?
+
 #include <iostream>
 #include <algorithm>
 #include <vector>

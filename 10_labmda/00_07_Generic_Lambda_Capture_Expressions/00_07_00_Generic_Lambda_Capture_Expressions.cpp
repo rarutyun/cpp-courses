@@ -1,3 +1,6 @@
+// What's new in the new standards?
+// Explain what MoveOnly objects are.
+
 #include <iostream>
 #include <vector>
 

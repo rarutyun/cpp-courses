@@ -1,3 +1,5 @@
+// Show what the problem is when capturing class members in a lambda expression.
+
 #include <iostream>
 
 class WithLambda

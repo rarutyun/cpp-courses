@@ -1,3 +1,8 @@
+// How to use stateful function in old standards?
+// Ways
+// - functor on stack (sum in public or getter) + std::ref
+// - variable on the stack + reference to it in the class
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
