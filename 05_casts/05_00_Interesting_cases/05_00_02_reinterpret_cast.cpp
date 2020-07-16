@@ -1,3 +1,6 @@
+// Show that with reinterpret_cast you need to understand what you are doing,
+// the last case is possible.
+
 #include <iostream>
 
 struct foo {

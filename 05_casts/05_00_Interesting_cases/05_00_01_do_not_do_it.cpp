@@ -1,3 +1,5 @@
+// Show what not to do with const.
+
 #include <iostream>
 
 const int x = 3;

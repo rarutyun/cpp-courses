@@ -1,3 +1,6 @@
+// Show how static_cast works, and also that there is no check in it,
+// so the last case is possible.
+
 #include <iostream>
 
 struct base {
