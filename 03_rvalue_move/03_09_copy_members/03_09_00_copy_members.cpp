@@ -1,4 +1,4 @@
-// Define the output order (What members would be called)
+// Compiler generated move semantics
 
 #include <iostream>
 

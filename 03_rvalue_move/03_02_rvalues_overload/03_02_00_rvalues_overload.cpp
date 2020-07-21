@@ -1,6 +1,7 @@
+// Quiz
+// Useless of const rvalue ref
+
 #include <iostream>
-#include <vector>
-#include <string>
 
 void foo(int& ref) { std::cout << "lvalue ref" << std::endl; }
 void foo(const int& cRef) { std::cout << "const lvalue ref" << std::endl; }
@@ -21,7 +22,6 @@ int main()
 
     int&& rref = 2;
         foo(3);
-        foo(std::move(rref));
         foo(std::move(i));
         foo(std::move(const_i));
         foo(std::move(lref));
@@ -33,6 +33,4 @@ int main()
         foo(i += i2);
         foo(++i);
         foo(i++);
-
-    // useless of const rvalue ref
 }

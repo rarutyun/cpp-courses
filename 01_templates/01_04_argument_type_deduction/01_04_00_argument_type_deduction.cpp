@@ -13,6 +13,7 @@ int main() {
     const int my_const_int{0};
     int& my_int_ref = my_int;
     const int& my_const_int_ref = my_const_int;
+
     std::cout << "my_int block:" << std::endl;
     func(my_int);
     ref_func(my_int);

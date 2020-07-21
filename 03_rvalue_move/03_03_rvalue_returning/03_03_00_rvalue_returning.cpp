@@ -1,4 +1,4 @@
-// mention move_iterator as an example
+// Rvalue reference as a return type
 
 #include <iostream>
 

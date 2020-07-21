@@ -1,9 +1,8 @@
-// lvalue ref
-// expressions results +, +=, =, ++
-// rvalue
-// "lvalue"
-// functions
-// how to distinguish (adrs)
+// What is expression?
+// Expressions: +, +=, =, ++
+// rvalue/lvalue
+// Functions
+// How to distinguish (adrs)
 
 #include <iostream>
 
@@ -30,9 +29,4 @@ int main() {
     &foo();
     &bar();
     &"hello";
-
-    int* arr = new int[3];
-    *arr = 1;
-    *(arr + 1) = 2;
-    arr[2] = 3;
 }

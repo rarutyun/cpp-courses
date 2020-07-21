@@ -1,4 +1,5 @@
-// Generated move members behavior
+// Compiler generated move members behavior
+
 #include <iostream>
 
 struct A {

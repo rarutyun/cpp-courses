@@ -1,9 +1,8 @@
-// What does it mean by move object?
-// What and when called?
+// Define move semantics members and possible implementation
+// Quiz
 
 #include <iostream>
 #include <cstring>
-using namespace std;
 
 struct String {
     String(const char* data);
@@ -56,11 +55,15 @@ int main() {
     String str("hello");
     String str2 = str;
     str = str2;
+
     String str3("le");
     str3 = std::move(str2);
     str3 = String("zzz");
+
     String str4(String("a"));
+
     String str5(foo());
     String&& rref(std::move(str5));
+
     String str6(rref);
 }

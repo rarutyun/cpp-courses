@@ -1,4 +1,5 @@
-// Define the output order
+// Define the old rules
+
 #include <iostream>
 
 struct String {
@@ -13,7 +14,7 @@ String foo(String str) {
 }
 
 int main() {
-    String a("Pech");
+    String a("Foo");
     String b = a;
     b = a;
     foo(a);

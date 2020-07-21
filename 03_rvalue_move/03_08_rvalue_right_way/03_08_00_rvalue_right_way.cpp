@@ -1,4 +1,4 @@
-// Show with and withour RVO
+// Show RVO
 
 #include <iostream>
 

@@ -1,4 +1,5 @@
-// Generated move members behavior (in case of inheritance)
+// Compiler generated move members behavior (in case of inheritance)
+
 #include <iostream>
 
 struct Base {
