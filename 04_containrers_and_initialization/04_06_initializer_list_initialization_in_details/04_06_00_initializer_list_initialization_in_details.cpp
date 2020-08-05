@@ -1,3 +1,6 @@
+// Describe the behaviour with MinimalVector<bool>
+// Case with "empty" braced initialization
+
 #include <iostream>
 
 template <typename T>
@@ -30,6 +33,4 @@ int main() {
     // MinimalVector<bool> mvb(10, true);
 
     // MinimalVector<bool> mvbi{10, true};
-
-    // Case with "empty" braced initialization
 }

@@ -1,3 +1,6 @@
+// Example with parentheses
+// How braced initialization helps
+
 #include <iostream>
 
 struct Widget {
@@ -10,7 +13,4 @@ int main() {
     Widget w; // Default ctor
 
     Widget w();
-    // Example with parentheses
-
-    // How braced initialization helps
 }

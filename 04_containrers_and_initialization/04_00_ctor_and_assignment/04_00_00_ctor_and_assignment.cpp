@@ -1,3 +1,5 @@
+// Initialization is the construction of an object
+
 #include <iostream>
 
 struct Widget {

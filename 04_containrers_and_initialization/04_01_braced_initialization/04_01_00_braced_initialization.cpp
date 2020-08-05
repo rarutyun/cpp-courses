@@ -1,3 +1,5 @@
+// C++11 brings the new initialization method: braced initialization
+
 #include <iostream>
 
 struct Widget {
