@@ -1,4 +1,4 @@
-// Tell from which blocks lambdas are built without going into details.
+// Lambda syntax (capture list, parameter list, return type)
 
 #include <iostream>
 
@@ -13,7 +13,7 @@ int main() {
     [] () { code; }
     ^  ^  ^
     |  |  |
-    |  |  optional: mutable, trailing return, ...
+    |  |  mutable, trailing return, ...
     |  |
     |  parameter list
     |

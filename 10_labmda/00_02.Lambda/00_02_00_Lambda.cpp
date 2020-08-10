@@ -1,4 +1,4 @@
-// Show how good the code looks using lambdas.
+// Show lambda usage
 
 #include <iostream>
 #include <algorithm>

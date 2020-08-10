@@ -1,5 +1,5 @@
-// Be a compiler and write what a compiler-generated closure would look like.
-// Write different
+// Translate lambda to a functor
+// Different options:
 // - captures
 // - mutable
 // - global variable
@@ -12,7 +12,5 @@ struct A
 };
 
 int main() {
-    [] () { std::cout << "Hello"; };
-
-    return 0;
+    [] () { std::cout << "Hello" << std::endl; };
 }

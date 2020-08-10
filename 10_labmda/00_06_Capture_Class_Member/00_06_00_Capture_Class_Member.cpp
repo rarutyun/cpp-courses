@@ -1,4 +1,4 @@
-// Show what the problem is when capturing class members in a lambda expression.
+// Capturing class members in a lambda expression
 
 #include <iostream>
 

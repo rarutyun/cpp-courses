@@ -1,5 +1,5 @@
-// To show the convenience of lambdas, write your own unique,
-// complicate it by adding counting the number of repetitions.
+// Lambda + unique
+// Remove zeros only + count zeros
 
 #include <iostream>
 #include <algorithm>

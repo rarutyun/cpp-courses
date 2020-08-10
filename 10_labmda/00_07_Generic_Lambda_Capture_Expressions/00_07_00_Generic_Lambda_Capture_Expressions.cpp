@@ -1,5 +1,5 @@
-// What's new in the new standards?
-// Explain what MoveOnly objects are.
+// Generic lambda
+// Capture expressions
 
 #include <iostream>
 #include <vector>
@@ -20,9 +20,7 @@ int main() {
     int a{};
     int b{};
 
-    [a + b](){}();
-
-    // example with sum
+    // capture sum
     // type of sum
 
     // return back to example 6

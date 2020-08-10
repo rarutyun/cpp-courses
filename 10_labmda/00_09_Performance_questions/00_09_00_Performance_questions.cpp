@@ -1,9 +1,10 @@
-// Compile this to O3 and do performance comparisons.
+// Lambda vs function
+// Lambda vs function from other translation unit
+// Lambda vs std::function
 
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <ctime>
 #include <functional>
 #include <chrono>
 
@@ -33,7 +34,7 @@ int main() {
 
     begin = std::chrono::high_resolution_clock::now();
 
-    std::for_each(v.begin(), v.end(), bar); // change to foo, f
+    std::for_each(v.begin(), v.end(), bar); // change to foo, func
 
     end = std::chrono::high_resolution_clock::now();
 

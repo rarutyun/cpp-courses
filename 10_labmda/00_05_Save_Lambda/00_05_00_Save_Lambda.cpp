@@ -1,4 +1,5 @@
-// Show ways to save lambda expressions.
+// How can lambda be stored?
+// Each lambda has different type
 
 #include <iostream>
 #include <functional>
@@ -17,5 +18,4 @@ int main() {
     auto cx = x; // copy ctor
 
     std::function<void(int)> f(x); // create lambda container
-    return 0;
 }

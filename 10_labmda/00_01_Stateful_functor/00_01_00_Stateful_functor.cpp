@@ -1,4 +1,4 @@
-// How to use stateful function in old standards?
+// How to use stateful functor?
 // Ways
 // - functor on stack (sum in public or getter) + std::ref
 // - variable on the stack + reference to it in the class
@@ -22,6 +22,4 @@ private:
 int main() {
     std::vector<int> v{5,3,2,7,3,6,4};
     std::for_each(v.begin(), v.end(), Accumulator());
-
-    return 0;
 }
