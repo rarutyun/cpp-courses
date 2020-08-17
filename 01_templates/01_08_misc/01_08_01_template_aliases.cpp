@@ -2,7 +2,7 @@
 
 #include <array>
 
-template <size_t Size = 10> 
+template <size_t Size = 10>
 using integral_array = std::array<int, Size>;
 
 template<typename T>
