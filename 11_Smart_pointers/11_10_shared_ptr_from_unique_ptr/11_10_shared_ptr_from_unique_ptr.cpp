@@ -1,8 +1,6 @@
 // Impossible to return back from shared_ptr to unique_ptr
 
 #include <memory>
-#include <iostream>
-#include <array>
 
 int main() {
     std::unique_ptr<int> uptr(new int(1));

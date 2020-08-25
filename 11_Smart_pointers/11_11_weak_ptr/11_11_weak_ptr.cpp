@@ -2,7 +2,6 @@
 
 #include <memory>
 #include <iostream>
-#include <array>
 
 int main() {
     std::shared_ptr<int> sptr(new int(1));

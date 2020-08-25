@@ -12,7 +12,7 @@ private:
     T* my_ptr;
 };
 
-// Typically smart pointers are never passed by referance
+// Typically smart pointers are never passed by reference
 template <typename T>
 void foo( const raii_pointer<T>& ptr ) {
     //...

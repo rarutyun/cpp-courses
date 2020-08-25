@@ -1,23 +1,22 @@
-#include <iostream>
 #include <unordered_map>
 #include <memory>
 
-struct Widget {/*...*/};
+struct widget {/*...*/};
 
-struct Id {/*...*/};
+struct id_type {/*...*/};
 
 // This function can be expensive
-std::unique_ptr<const Widget> WidgetFactory( Id id ) {/*...*/}
+std::unique_ptr<const widget> widget_factory( id_type id ) {/*...*/}
 
-std::shared_ptr<const Widget> WidgetFactoryWithCaching( Id id ) {
-    static std::unordered_map<Id, std::weak_ptr<const Widget>> cache;
+std::shared_ptr<const widget> widget_factory_with_caching( id_type id ) {
+    static std::unordered_map<id_type, std::weak_ptr<const widget>> cache;
 
     auto ptr = cache[id].lock(); // std::shared_ptr
                                  // points to the cached object or
                                  // a null pointer if no such an object in the cache
 
     if (!ptr) { // Load an object if no such an object
-        ptr = WidgetFactory(id);
+        ptr = widget_factory(id);
         cache[id] = ptr; // cache loaded object
     }
     return ptr;

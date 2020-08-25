@@ -2,7 +2,6 @@
 // Type of lambda
 
 #include <iostream>
-#include <vector>
 #include <cstdio>
 
 struct custom_deleter {

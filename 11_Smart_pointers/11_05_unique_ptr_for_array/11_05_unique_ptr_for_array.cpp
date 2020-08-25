@@ -1,6 +1,6 @@
 // Array specialization
-// + operator[]
-// - operator *, ->
+// Has operator[]
+// Does not have operator *, ->
 
 #include <memory>
 #include <iostream>

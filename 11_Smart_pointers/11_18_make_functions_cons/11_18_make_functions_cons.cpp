@@ -1,7 +1,6 @@
 // No way to use custom deleter
 
 #include <memory>
-#include <vector>
 
 void f1() {
     auto deleter = [](int* ptr) { /*...*/delete ptr; };

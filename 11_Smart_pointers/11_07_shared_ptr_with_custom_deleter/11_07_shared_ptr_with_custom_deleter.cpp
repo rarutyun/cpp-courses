@@ -1,7 +1,6 @@
 // Deleter is not a part of the type
 
 #include <memory>
-#include <iostream>
 
 int main() {
     auto deleter = [](int* ptr) { delete ptr; };

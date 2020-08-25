@@ -28,6 +28,6 @@ int main() {
 
     // Destructor of shptr2 decrements ref count
     // Destructor of shptr deallocates only the memory of pointer
-    //      wptr is expired now, but the control block still exists
+    //     wptr is expired now, but the control block still exists
     // Destructor of wptr deallocates the control block
 }
