@@ -6,7 +6,7 @@
 #include <algorithm>
 #include <vector>
 
-struct Callable
+struct callable
 {
     void operator()(int i)
     {
@@ -22,5 +22,5 @@ void foo(int i)
 int main() {
     std::vector<int> v{1,6,2,7,4,5};
 
-    std::for_each(v.begin(), v.end(), Callable{});
+    std::for_each(v.begin(), v.end(), callable{});
 }

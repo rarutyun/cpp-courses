@@ -4,17 +4,17 @@
 #include <iostream>
 #include <vector>
 
-class MoveOnly
+class move_only
 {
 public:
-    MoveOnly() = default;
-    MoveOnly(MoveOnly&& other) = default;
+    move_only() = default;
+    move_only(move_only&& other) = default;
 };
 
 int main() {
     [](auto x){};
 
-    MoveOnly mo;
+    move_only mo;
     [mo](){}(); // how to fix
 
     int a{};

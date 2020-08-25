@@ -8,7 +8,7 @@
 #include <algorithm>
 #include <functional>
 
-struct Accumulator
+struct accumulator
 {
 public:
     void operator()(int value)
@@ -21,5 +21,5 @@ private:
 
 int main() {
     std::vector<int> v{5,3,2,7,3,6,4};
-    std::for_each(v.begin(), v.end(), Accumulator());
+    std::for_each(v.begin(), v.end(), accumulator());
 }
