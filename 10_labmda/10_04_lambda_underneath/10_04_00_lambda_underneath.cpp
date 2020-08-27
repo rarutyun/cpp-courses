@@ -7,7 +7,7 @@
 #include <iostream>
 #include <vector>
 
-struct a
+struct empty
 {
 };
 
