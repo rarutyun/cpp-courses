@@ -2,10 +2,10 @@
 
 #include <iostream>
 
-class WithLambda
+class with_lambda
 {
 public:
-    WithLambda(int val)
+    with_lambda(int val)
         : m_val(val)
     {}
 
@@ -18,7 +18,7 @@ public:
         x(z);
     }
 
-    int getVal()
+    int get_val()
     {
         return m_val;
     }
@@ -29,8 +29,8 @@ private:
 
 int main()
 {
-    WithLambda with_lambda(1);
-    std::cout << with_lambda.getVal() << std::endl;
-    with_lambda.method(4);
-    std::cout << with_lambda.getVal() << std::endl;
+    with_lambda obj(1);
+    std::cout << obj.get_val() << std::endl;
+    obj.method(4);
+    std::cout << obj.get_val() << std::endl;
 }
