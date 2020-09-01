@@ -1,6 +1,6 @@
-// "default" and "delete" keywords description
-// which members may be "defaulted"
-// note that "delete" declares the function but restricts to use it
+// "default" and "delete" keywords behavior
+// allowed default members
+// "delete" declares the function but restricts to use it
 
 // since C++11
 

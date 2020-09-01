@@ -1,10 +1,15 @@
-// decltype keyword
+// decltype keyword behavior
 // difference between decltype() and decltype(())
+// how many digits will be printed during execution?
 
 // since C++11
 #include <iostream>
 
 struct A { double x; };
+
+A* a;
+decltype(a->x) d; // double
+decltype((a->x)) d2 = d ; // double&
 
 template<typename T>
 T to_integral(T t)  { return t; }
@@ -19,10 +24,6 @@ int to_integral(double d) {
 }
 
 int main() {
-    A* a;
-    decltype(a->x) d; // double
-    decltype((a->x)) d2 = d ; // double&
-
     decltype(to_integral(3.)) result = to_integral(3.); // int
 
     decltype(to_integral<int>)* int_convertion_ptr = &to_integral<int>;

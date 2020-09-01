@@ -1,13 +1,12 @@
-// auto return type deduction
-
 // since C++14
 
-auto     void_func0() {}                  // returns void
-auto     void_func1() { return func0(); } // returns void
-// auto* void_func1() {}                  // compile-time error
+auto void_func0() {}                  // returns void
+auto void_func1() { return func0(); } // returns void
 
 int x = 1;
-auto  func0() { return  x; } // return  int
+auto func0() { return  x; } // return  int
+
+// auto* void_func1() {} // compile-time error
 auto* func1() { return &x; } // returns int*
 
 template<class T, class U>
