@@ -1,5 +1,3 @@
-// Describe what is the difference between this two methods
-
 #include <iostream>
 #include <vector>
 

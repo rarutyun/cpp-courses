@@ -1,4 +1,4 @@
-// C++11 brings the new initialization method: braced initialization
+// Define the braced initialization behaviour
 
 #include <iostream>
 

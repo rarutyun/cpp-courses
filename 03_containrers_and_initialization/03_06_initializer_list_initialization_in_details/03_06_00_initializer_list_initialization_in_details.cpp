@@ -1,5 +1,5 @@
-// Describe the behaviour with MinimalVector<bool>
-// Case with "empty" braced initialization
+// Describe the MinimalVector<bool> case
+// Describe the сase with "empty" braced initialization
 
 #include <iostream>
 

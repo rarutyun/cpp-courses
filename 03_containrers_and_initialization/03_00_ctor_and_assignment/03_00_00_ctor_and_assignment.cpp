@@ -1,4 +1,5 @@
-// Initialization is the construction of an object
+// Define what is initialization
+// What would be printed?
 
 #include <iostream>
 

@@ -1,6 +1,7 @@
-// Example with push_back
-// Example with ctor from the iterator
-// Example with braced initialization
+// How to initialize the vector which contains a, b and c?
+//    - push_back
+//    - pass iterators to the corresponding ctor
+//    - braced initialization
 
 #include <vector>
 
@@ -9,5 +10,5 @@ int main() {
     int b = 2;
     int c = 3;
 
-    std::vector<int> v; // How to initialize the vector which contains a, b and c?
+    std::vector<int> v;
 }

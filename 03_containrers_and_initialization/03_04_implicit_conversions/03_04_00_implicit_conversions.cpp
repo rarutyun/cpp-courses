@@ -1,4 +1,4 @@
-// Example with braced initialization (what is the difference)
+// Narrow conversion and braced initialization
 
 int main() {
     double x = 1.;

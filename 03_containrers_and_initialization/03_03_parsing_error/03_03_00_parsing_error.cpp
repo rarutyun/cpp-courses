@@ -1,5 +1,5 @@
-// Example with parentheses
-// How braced initialization helps
+// Most vexing parse explanation
+// Most vexing parse solution using the braced initialization
 
 #include <iostream>
 
