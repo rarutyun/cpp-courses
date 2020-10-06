@@ -1,4 +1,6 @@
-// declval keyword use-cases
+// since C++11
+
+// std::declval use-cases
 
 #include <utility>
 

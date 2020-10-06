@@ -1,6 +1,6 @@
 // decltype keyword behavior
 // difference between decltype() and decltype(())
-// how many digits will be printed during execution?
+// non evaluation context in decltype. Mention sizeof().
 
 // since C++11
 #include <iostream>

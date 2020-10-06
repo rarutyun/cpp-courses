@@ -1,34 +1,24 @@
 // since C++11
+
 #include <iostream>
 
-struct throwable_func {
-    static void perform(int input) {
-        std::cout << input << std::endl;
-
-        if (input > 5) throw 42;
-    }
-};
-
-struct noexcept_func {
-    static void perform(int input) noexcept {
-        std::cout << input << std::endl;
-    }
-};
+struct no_throwing { void operator()(int) noexcept {} };
+struct throwing    { void operator()(int)          {} };
 
 template<typename Functor>
-void for_each(int first, int second) noexcept(noexcept(Functor::perform(1))) {
+void for_each(int first, int second, Functor func) noexcept(noexcept(func(first))) {
     for (int i = first; i < second; i++) {
-        Functor::perfrom(i);
+        func(i);
     }
 }
 
-void throwing();
-void no_throwing() noexcept(true);
-
 int main() {
-    std::cout << noexcept(throwing()) << std::endl; // do not remove parentheses
-    std::cout << noexcept(no_throwing()) << std::endl;
+    throwing thr{};
+    no_throwing nthr{};
 
-    std::cout <<  noexcept(for_each<throwable_func>(0,0)) << std::endl;
-    std::cout <<  noexcept(for_each<noexcept_func>(0,0))  << std::endl;
+    std::cout << noexcept(thr(1)) << std::endl;
+    std::cout << noexcept(nthr(1)) << std::endl;
+
+    std::cout << noexcept(for_each(0, 1, thr)) << std::endl;
+    std::cout << noexcept(for_each(0, 1, nthr)) << std::endl;
 }
