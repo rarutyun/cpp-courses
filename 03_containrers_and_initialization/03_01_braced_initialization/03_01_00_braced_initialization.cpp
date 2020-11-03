@@ -1,10 +1,10 @@
-// Define the braced initialization behaviour
+// The same behavior in both code blocks
 
 #include <iostream>
 
 struct Widget {
-    Widget() {}
-    Widget(int) {}
+    Widget() = default;
+    Widget( int ) {}
     Widget( const Widget& ) { std::cout << "Copy ctor\n"; }
     Widget& operator=( const Widget& ) { std::cout << "Copy assignment\n"; }
 }; // struct Widget

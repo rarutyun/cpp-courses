@@ -1,16 +1,18 @@
 // Most vexing parse explanation
 // Most vexing parse solution using the braced initialization
 
-#include <iostream>
+struct Form {};
 
 struct Widget {
-    Widget() {}
-    Widget( const Widget& ) { std::cout << "Copy ctor\n"; }
-    Widget& operator=( const Widget& ) { std::cout << "Copy assignment\n"; }
-}; // struct Widget
+    Widget() = default;
+    Widget( const Form& ) {}
+    void draw() {}
+};
 
 int main() {
     Widget w; // Default ctor
+    Widget w1{};
 
-    Widget w();
+    Widget w2(Form());
+    w2.draw();
 }

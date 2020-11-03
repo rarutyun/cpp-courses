@@ -1,7 +1,7 @@
-// How to initialize the vector which contains a, b and c?
-//    - push_back
-//    - pass iterators to the corresponding ctor
-//    - braced initialization
+// Show example: how to create a vector which contains `a`, `b` and `c`?
+//  - push_back (not initialization)
+//  - pass iterators to the corresponding ctor
+//  - braced initialization
 
 #include <vector>
 

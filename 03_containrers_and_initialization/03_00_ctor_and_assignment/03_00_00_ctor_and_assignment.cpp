@@ -4,7 +4,7 @@
 #include <iostream>
 
 struct Widget {
-    Widget() {}
+    Widget() = default;
     Widget( const Widget& ) { std::cout << "Copy ctor\n"; }
     Widget& operator=( const Widget& ) { std::cout << "Copy assignment\n"; }
 }; // struct Widget
