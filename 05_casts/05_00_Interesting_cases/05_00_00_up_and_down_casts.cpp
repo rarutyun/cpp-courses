@@ -4,6 +4,8 @@
 #include <iostream>
 
 struct base {
+    virtual ~base() = default;
+
     void foo() {
         std::cout << "base foo" << std::endl;
     }
@@ -34,6 +36,7 @@ int main() {
     direved_ptr->bar();
 
     static_cast<base*>(direved_ptr)->foo();
+    delete direved_ptr;
 
     static_cast<direved*>(base_ptr)->foo();
     static_cast<direved*>(base_ptr)->bar();
