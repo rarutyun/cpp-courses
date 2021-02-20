@@ -1,6 +1,6 @@
 // Link translation units and show errors
 
-#include "00_02_00_header.h"
+#include "00_02_02_header.h"
 
 int bar();
 

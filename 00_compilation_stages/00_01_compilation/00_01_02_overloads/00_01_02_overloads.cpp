@@ -1,8 +1,9 @@
-// What is mangling?
-// Show the symbol table(use nm)
+// What are overloads?
 // Show how extern "C" works
 // Write overload with extern "C"
 // Show extern "C++"
+// What is mangling?
+// Show the symbol table(use nm)
 
 double foo(int first) {}
 
