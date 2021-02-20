@@ -1,7 +1,7 @@
 // How to resolve link error with static.
 // Show address of static function.
 
-#include "00_02_04_header.h"
+#include "00_02_03_header.h"
 
 int bar();
 

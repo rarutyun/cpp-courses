@@ -8,5 +8,3 @@ int main() {
     int local_a = global_a;
     return 0;
 }
-
-int global_a{};

@@ -1,7 +1,7 @@
 // How to resolve link error with inline.
 // Show address of inline function.
 
-#include "00_02_05_header.h"
+#include "00_02_04_header.h"
 
 int bar();
 
