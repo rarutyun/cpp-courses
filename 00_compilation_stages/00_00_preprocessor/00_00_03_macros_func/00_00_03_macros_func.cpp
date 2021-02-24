@@ -4,6 +4,7 @@
 // - call
 // - static type checking
 // - expression evaluation
+// Advantages of macro-like function
 
 #include <iostream>
 #include <exception>
