@@ -7,6 +7,7 @@ void print_size() {
 
 int main() {
     print_size();
+    print_size<>();
     print_size<int>();
     print_size<long long>();
 }

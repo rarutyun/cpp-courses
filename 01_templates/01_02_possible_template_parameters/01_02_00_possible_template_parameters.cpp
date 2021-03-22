@@ -23,6 +23,7 @@ void foo() {
 }
 
 int main() {
+    std::array<int, 3> arr; // works
     // std::array arr; // wouldn't compile
     foo<int>();
     foo<3>();

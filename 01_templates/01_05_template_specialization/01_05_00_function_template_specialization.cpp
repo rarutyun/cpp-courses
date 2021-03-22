@@ -1,6 +1,7 @@
 // What is template specialization?
 // Differencies between full and partial specialization
 // Compare function overloads with function template specializations
+// Template specialization is not an overload
 
 #include <iostream>
 

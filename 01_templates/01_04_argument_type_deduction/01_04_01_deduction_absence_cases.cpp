@@ -1,4 +1,5 @@
 // Define the cases in which type deduction is not present (mention C++17 CTAD)
+// Show default template argument for no_auto_deduction
 
 template <typename T>
 struct my_struct {
