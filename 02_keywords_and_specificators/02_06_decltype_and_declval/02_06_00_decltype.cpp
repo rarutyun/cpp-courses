@@ -1,6 +1,6 @@
 // decltype keyword behavior
 // difference between decltype() and decltype(())
-// non evaluation context in decltype. Mention sizeof().
+// non-evaluation context in decltype. Mention sizeof().
 
 // since C++11
 #include <iostream>

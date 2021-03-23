@@ -1,5 +1,5 @@
 // member function overloads with const
-// constant object can not call methods without const qualifier
+// methods without const qualifier cannot be called for a constant object
 
 #include <iostream>
 
@@ -8,7 +8,7 @@ struct my_struct {
 
     void print() {
         foo();
-        std::cout << "non const print" << std::endl;
+        std::cout << "non-const print" << std::endl;
     }
 
     void print() const {

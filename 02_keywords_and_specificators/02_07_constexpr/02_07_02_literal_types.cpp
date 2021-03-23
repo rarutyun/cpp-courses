@@ -13,7 +13,7 @@ public:
             my_data[i] = init_value;
     }
 
-    constexpr T& operator[](std::size_t n) const {
+    constexpr const T& operator[](std::size_t n) const {
         return my_data[n];
     }
     constexpr std::size_t size() const { return Size; }

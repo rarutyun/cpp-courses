@@ -9,7 +9,7 @@ int main() {
     const int& const_i_ref = i_ref;
     /*const*/ int* i_ptr = &i;
 
-    auto a1 = 100;
+    auto a0 = 100;
     auto a1 = i;
     auto a2 = i_ref;
     auto a3 = const_i_ref;
