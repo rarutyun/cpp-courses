@@ -10,7 +10,7 @@ struct Widget {
 };
 
 int main() {
-    Widget w; // Default ctor
+    Widget w(); // Default ctor
     Widget w1{};
 
     Widget w2(Form());

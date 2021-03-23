@@ -31,5 +31,7 @@ int main() {
         Widget w1{w};
 
         Widget w2 = {w};
+
+        w2 = w1;
     }
 }

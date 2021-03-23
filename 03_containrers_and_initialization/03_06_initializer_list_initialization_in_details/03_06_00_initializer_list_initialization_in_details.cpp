@@ -1,6 +1,7 @@
 // Describe the MinimalVector<bool> case
 // Describe the сase with "empty" braced initialization
 
+#include <initializer_list>
 #include <iostream>
 
 template <typename T>
