@@ -19,12 +19,12 @@ struct Z<U*> {
 
 template <typename T1, typename T2>
 struct Z2 {
-    Z2() { std::cout << "I work with everything except two the same type references" << std::endl; }
+    Z2() { std::cout << "I am generic template" << std::endl; }
 };
 
 template <typename T>
 struct Z2<T, int> {
-    Z2() { std::cout << "I work with everything except int as second template parameter" << std::endl; }
+    Z2() { std::cout << "I work with any first template argument and int as second template argument" << std::endl; }
 };
 
 int main() {

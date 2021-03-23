@@ -10,12 +10,12 @@ struct generic_base {
 };
 
 struct int_derived : public generic_base<int> {
-    int_derived() { std::cout << "int_deriver ctor" << std::endl; }
+    int_derived() { std::cout << "int_derived ctor" << std::endl; }
 };
 
 template <typename U>
 struct generic_derived : public generic_base<U> {
-    generic_derived() { std::cout << "generic_deriver ctor" << std::endl; }
+    generic_derived() { std::cout << "generic_derived ctor" << std::endl; }
 };
 
 int main() {

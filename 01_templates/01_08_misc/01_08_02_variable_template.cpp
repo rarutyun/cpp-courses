@@ -1,9 +1,10 @@
 // Since C++14
+// What is the problem if the variable is defined in the header file?
 
 #include <iostream>
 
 template<typename T>
-inline T n = T(5);
+T n = T(5);
 
 int main() {
     n<int> = 10;
