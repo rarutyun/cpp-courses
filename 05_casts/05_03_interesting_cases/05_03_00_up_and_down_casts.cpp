@@ -1,5 +1,4 @@
-// Show how static_cast works, and also that there is no check in it,
-// so the last case is possible.
+// static_cast works without any checks
 
 #include <iostream>
 
