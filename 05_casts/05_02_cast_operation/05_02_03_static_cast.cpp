@@ -26,5 +26,3 @@ int main() {
     B b = static_cast<B>(a);
     A a = static_cast<A>(b);
 }
-
-

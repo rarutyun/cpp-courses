@@ -22,4 +22,3 @@ int main() {
     B b = B(a);
     A a = A(b);
 }
-
