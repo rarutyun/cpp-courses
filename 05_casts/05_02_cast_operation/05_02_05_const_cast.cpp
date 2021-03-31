@@ -7,8 +7,8 @@ void bar(int& x) {
 }
 
 void foo(const int& x) {
-    // bar(x);
-    bar(const_cast<int&>(x));
+    bar(x);
+    // bar(const_cast<int&>(x));
 }
 
 int main() {

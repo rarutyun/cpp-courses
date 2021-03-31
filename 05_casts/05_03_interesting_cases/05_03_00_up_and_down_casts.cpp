@@ -43,4 +43,5 @@ int main() {
     base_ptr = new base();
 
     static_cast<direved*>(base_ptr)->bar();
+    delete base_ptr;
 }

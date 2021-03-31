@@ -1,7 +1,6 @@
 // Safe downcast from parent to child
 // For work it is necessary that the parent has a virtual method
 
-
 #include <iostream>
 
 struct base {

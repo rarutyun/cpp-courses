@@ -8,7 +8,7 @@ struct B {
     }
 
     explicit operator A() {
-        std::cout << "conversion to B" << std::endl;
+        std::cout << "conversion to A" << std::endl;
         return A();
     }
 };
@@ -16,5 +16,5 @@ struct B {
 int main() {
     A a;
     B b = a; // error!!!
-    A a = b; // error!!!
+    A a1 = b; // error!!!
 }

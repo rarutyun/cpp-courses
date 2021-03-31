@@ -4,15 +4,6 @@ struct A {};
 struct B {
     B() = default;
 
-    B(A) {
-        std::cout << "conversion from A" << std::endl;
-    }
-
-    B& operator=(A) {
-        std::cout << "conversion from A (assignment)" << std::endl;
-        return *this;
-    }
-
     operator bool() const {
         return true;
     }
@@ -20,7 +11,7 @@ struct B {
 
 int main() {
     B b;
-    if (b) {
+    if (b) { // implicit conversion
         std::cout << "Hello" << std::endl;
     }
 }

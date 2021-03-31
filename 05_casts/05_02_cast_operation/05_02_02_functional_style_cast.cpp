@@ -1,3 +1,6 @@
+// Functional style cast looks like a constructor call
+// Functional style cast can choose conversion operator
+
 #include <iostream>
 
 struct A {};
@@ -7,7 +10,7 @@ struct B {
     }
 
     explicit operator A() {
-        std::cout << "conversion to B" << std::endl;
+        std::cout << "conversion to A" << std::endl;
         return A();
     }
 };
@@ -20,5 +23,5 @@ int main() {
     A a;
     foo(B(a));
     B b = B(a);
-    A a = A(b);
+    A a1 = A(b);
 }

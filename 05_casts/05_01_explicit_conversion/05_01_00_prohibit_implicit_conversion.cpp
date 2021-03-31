@@ -7,11 +7,6 @@ struct B {
     B(A) {
         std::cout << "conversion from A" << std::endl;
     }
-
-    operator A() {
-        std::cout << "conversion to B" << std::endl;
-        return A();
-    }
 };
 
 void foo(B b) {

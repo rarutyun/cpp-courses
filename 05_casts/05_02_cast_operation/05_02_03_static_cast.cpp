@@ -1,4 +1,4 @@
-// static_cast do everything that the implicit conversion do
+// static_cast can be used in the same context as the implicit conversion
 // up and down casts
 // void* to the type of any pointer
 
@@ -11,7 +11,7 @@ struct B {
     }
 
     explicit operator A() {
-        std::cout << "conversion to B" << std::endl;
+        std::cout << "conversion to A" << std::endl;
         return A();
     }
 };
@@ -24,5 +24,5 @@ int main() {
     A a;
     foo(static_cast<B>(a));
     B b = static_cast<B>(a);
-    A a = static_cast<A>(b);
+    A a1 = static_cast<A>(b);
 }
