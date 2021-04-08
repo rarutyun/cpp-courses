@@ -1,4 +1,4 @@
-// Show the difference between deleted and not defined move CTOR.
+// Show the difference between deleted and not declared move CTOR.
 
 #include <utility>
 
