@@ -5,7 +5,7 @@
 struct A {
     A() = default;
     A(const A&) = default;
-    A(A&&) = delete;
+//    A(A&&) = delete;
 };
 
 int main() {
