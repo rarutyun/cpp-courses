@@ -1,7 +1,7 @@
 // Factorial computation during the compilation process
 // Also may be computated inside constexpr function after C++11
 
-#include <stddef>
+#include <сstddef>
 
 auto factorial (std::size_t n) {
     std::size_t result = 1;
