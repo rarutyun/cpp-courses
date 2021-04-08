@@ -35,7 +35,7 @@ int main() {
     z1.print();
 
     Z<int> z2(5);
-    z2.print(); // show absence of print;
+    z2.print();
 
     Z<short> z3(4);
     z3.print();
