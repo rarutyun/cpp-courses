@@ -1,4 +1,5 @@
 // Handle throwing move constuctors inside push_back() and reserve() functions
+// Mention the solution with constexpr-if statement (since C++17)
 
 #include <iostream>
 #include <cstddef>
@@ -10,11 +11,11 @@ namespace my {
 
 template <typename T>
 class vector {
-    static T* allocate( std::size_t size ) {
+    static T* allocate(std::size_t size) {
         return static_cast<T*>(operator new (sizeof(T) * size));
     }
 
-    static void destroy( T* data, std::size_t count ) {
+    static void destroy(T* data, std::size_t count) {
         for (std::size_t i = 0; i < count; i++) {
             (data + i)->~T();
         }
@@ -38,7 +39,7 @@ public:
 
     ~vector() { destroy(my_data, my_size); }
 
-    void reserve( std::size_t des_cap ) {
+    void reserve(std::size_t des_cap) {
         if (my_cap < des_cap) {
             T* tmp = allocate(des_cap);
 
@@ -51,7 +52,7 @@ public:
         }
     }
 
-    void push_back( const T& value ) {
+    void push_back(const T& value) {
         if (my_size == my_cap) {
             reserve(my_cap == 0 ? 1 : my_cap * 2);
         }
@@ -66,9 +67,27 @@ public:
 
 } // namespace my
 
+struct my_struct {
+    my_struct() = default;
+    my_struct(const my_struct&) { std::cout << "my_struct copy ctor" << std::endl; }
+    my_struct(my_struct&&)      { std::cout << "my_struct move ctor" << std::endl; }
+};
+
+struct my_struct2 {
+    my_struct2() = default;
+    my_struct2(const my_struct2&)     { std::cout << "my_struct2 copy ctor" << std::endl; }
+    my_struct2(my_struct2&&) noexcept { std::cout << "my_struct2 move ctor" << std::endl; }
+};
+
 int main() {
-    my::vector<int> v;
-    v.push_back(1);
-    v.push_back(1);
-    v.push_back(1);
+    my::vector<my_struct> v;
+    v.push_back({});
+    v.push_back({});
+    v.push_back({});
+
+    std::cout << "------------" << std::endl;
+    my::vector<my_struct2> v2;
+    v2.push_back({});
+    v2.push_back({});
+    v2.push_back({});
 }

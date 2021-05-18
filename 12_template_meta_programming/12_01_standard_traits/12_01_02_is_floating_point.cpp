@@ -1,3 +1,5 @@
+// Mention about simplified implementation (std::remove_cv)
+
 #include <iostream>
 
 namespace my {

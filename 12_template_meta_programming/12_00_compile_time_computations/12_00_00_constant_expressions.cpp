@@ -2,7 +2,7 @@
 // How to check if an expression is constant?
 
 #include <cstddef>
-
+#include <array>
 
 int foo();
 
