@@ -1,5 +1,4 @@
 // What are constant expressions and where they may be used?
-// How to check if an expression is constant?
 
 #include <cstddef>
 #include <array>
