@@ -7,14 +7,7 @@
 namespace my {
 
 template<bool, typename, typename U>
-struct conditional {
-    using type = U;
-};
-
-template<typename T, typename U>
-struct conditional<true, T, U> {
-    using type = T;
-};
+struct conditional;
 
 } // namespace my
 
