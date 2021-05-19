@@ -4,16 +4,16 @@
 
 // since C++11
 
-#include <iostream>
+#include <cstddef>
 
 // C++11 constexpr functions may not contain local variables and loops,
 // therefore we need use recursion here (fixed in C++14)
-constexpr int factorial(int n) {
+constexpr std::size_t factorial(std::size_t n) {
     return n <= 1 ? 1 : (n * factorial(n - 1));
 }
 
 // output function that requires a compile-time constant, for testing
-template<int n>
+template<std::size_t n>
 struct constN {
     constN() { std::cout << n << '\n'; }
 };
