@@ -1,7 +1,7 @@
 // Factorial computation during the compilation process
 // Factorial looks simpler as a constexpr function since C++14
 
-#include <сstddef>
+#include <cstddef>
 
 template <std::size_t N>
 struct factorial {
