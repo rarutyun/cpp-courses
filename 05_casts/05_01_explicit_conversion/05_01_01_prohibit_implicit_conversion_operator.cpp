@@ -12,5 +12,5 @@ struct B {
 
 int main() {
     B b;
-    A a1 = b; // error!!!
+    A a1 = b;
 }
