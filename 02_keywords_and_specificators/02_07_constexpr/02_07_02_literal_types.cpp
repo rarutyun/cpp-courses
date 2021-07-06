@@ -28,13 +28,13 @@ constexpr std::size_t sum(const constexpr_array<Type, Size>& a) {
 }
 
 // Output function that requires a compile-time constant, for testing
-template<int n>
+template<std::size_t N>
 struct constN {
-    constN() { std::cout << n << '\n'; }
+    constN() { std::cout << N << '\n'; }
 };
 
-constexpr constexpr_array<int, 10> arr(3);
 
 int main() {
+    constexpr constexpr_array<int, 10> arr(3);
     constN<sum(arr)> out;
 }

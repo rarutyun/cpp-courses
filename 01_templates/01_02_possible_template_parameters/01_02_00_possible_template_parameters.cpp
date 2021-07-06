@@ -1,5 +1,6 @@
 // Describe possible template parameters
 // Ask about chosen overloads
+// Difference between class and typename before C++17
 
 #include <iostream>
 #include <array>
@@ -16,7 +17,7 @@ void foo() {
     std::cout << "second " << __PRETTY_FUNCTION__ << std::endl;
 }
 
-template <template <typename, std::size_t> class Array> // difference between class and typename before C++17
+template <template <typename, std::size_t> class Array>
 void foo() {
     Array<int, 10> a{};
     std::cout << "third " << __PRETTY_FUNCTION__ << std::endl;
