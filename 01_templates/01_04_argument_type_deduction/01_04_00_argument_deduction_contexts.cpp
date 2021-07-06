@@ -11,7 +11,7 @@ template <typename T>
 void func(std::vector<T>) { std::cout << __PRETTY_FUNCTION__ << std::endl; }
 
 template<typename T, std::size_t N>
-std::size_t func(T(&arr)[N]) { return N; }
+std::size_t func(T (&arr)[N]) { return N; }
 
 template <template <typename, std::size_t> class Array, typename T, std::size_t N>
 std::size_t func(Array<T, N>) { return N; }
