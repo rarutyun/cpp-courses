@@ -4,7 +4,7 @@
 
 struct A {};
 struct B {
-    operator A() {
+    operator A() const {
         std::cout << "conversion to A" << std::endl;
         return A();
     }
