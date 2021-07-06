@@ -1,6 +1,6 @@
-// Show the difference between deleted and not defined move CTOR.
+// Show the difference between deleted and not declared move CTOR.
 
-#include <iostream>
+#include <utility>
 
 struct A {
     A() = default;
@@ -8,12 +8,7 @@ struct A {
 //    A(A&&) = delete;
 };
 
-A foo() {
-    A a;
-    return a;
-}
-
 int main() {
     A a1;
-    A a2(foo());
+    A a2 = std::move(a1);
 }

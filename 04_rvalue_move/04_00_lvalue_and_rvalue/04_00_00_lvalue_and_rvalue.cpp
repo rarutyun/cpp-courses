@@ -2,7 +2,7 @@
 // Expressions: +, +=, =, ++
 // rvalue/lvalue
 // Functions
-// How to distinguish (adrs)
+// How to distinguish (address)
 
 #include <iostream>
 
@@ -26,7 +26,7 @@ int main() {
     a + b;
     a++;
 
-    &foo();
-    &bar();
-    &"hello";
+    foo();
+    bar();
+    "hello";
 }
