@@ -1,4 +1,5 @@
 // const_cast is needed for removing const from the object
+// const_cast is not supposed to be used to add cv-qualifiers
 
 #include <iostream>
 

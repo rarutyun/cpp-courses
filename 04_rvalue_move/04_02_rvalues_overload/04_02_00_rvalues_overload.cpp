@@ -33,4 +33,5 @@ int main()
         foo(i += i2);
         foo(++i);
         foo(i++);
+    std::cout << std::endl;
 }

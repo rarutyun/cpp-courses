@@ -15,7 +15,7 @@ void bar<int>() {
     std::cout << "int" << std::endl;
 }
 
-// template <typename U> 
+// template <typename U>
 // void bar<U*>() {
 //     std::cout << "pointer" << std::endl;
 // }

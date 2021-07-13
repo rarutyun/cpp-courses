@@ -3,7 +3,7 @@
 #include <iostream>
 
 struct A {
-    A()                        { std::cout << "A default ctor" << std::endl; }
+    A() = default;
     A(A&&)                     { std::cout << "A move ctor" << std::endl; }
     A& operator=(A&&)          { std::cout << "A move assignment" << std::endl; return *this; }
 };

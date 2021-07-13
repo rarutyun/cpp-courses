@@ -1,5 +1,5 @@
-// Functional style cast looks like a constructor call
-// Functional style cast can choose conversion operator
+// Functional cast looks like a constructor call
+// Functional cast can choose conversion operator
 
 #include <iostream>
 

@@ -18,7 +18,7 @@ private:
 };
 
 template <typename T>
-T foo() {
+T make() {
     return T{};
 }
 
@@ -33,8 +33,10 @@ int main() {
     std::cout << "m3 size: " << sizeof(m3) << std::endl;
     std::cout << "m4 size: " << sizeof(m4) << std::endl;
 
-    m1 = foo<int>();
-    m2 = foo<float>();
-    m3 = foo<std::string>();
-    m4 = foo<std::vector<int>>();
+    // Assignment from T
+    m1 = make<int>();
+    m2 = make<float>();
+    m3 = make<std::string>();
+    m4 = make<std::vector<int>>();
+    // m1 = make<std::string>(); // compilation error
 }
