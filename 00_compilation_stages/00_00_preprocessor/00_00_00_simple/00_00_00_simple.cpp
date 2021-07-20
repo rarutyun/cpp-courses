@@ -1,15 +1,14 @@
 // Preprocessor behavior:
 // * Removes comments
 // * Replaces #define macros with their values
-// * Selects the necessary pieces of code according to the conditions of #if,
-//   #ifdef and #ifndef
+// * Removes the code under `false` condition for #if, #ifdef and #ifndef
 // * Includes header files content
 //
-// Command example to run only preprocessor:
+// Command example to run preprocessor only:
 // g++ -E 00_00_00_simple.cpp -o 00_00_00_simple.ii
 //
 // * -E runs preprocessor for a given file without compilation
-// * -o sets the name of the resulting file (extension name (.ii) is arbitrary)
+// * -o sets the name of the resulting file
 
 // What is removed after preprocessing?
 // What does remain after preprocessing?
