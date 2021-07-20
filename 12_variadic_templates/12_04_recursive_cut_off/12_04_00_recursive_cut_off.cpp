@@ -1,3 +1,5 @@
+// Describe the revursive cut off for sum
+// Show the solution for execute
 #include <iostream>
 
 template <typename T>
@@ -15,38 +17,9 @@ auto sum( Args... args ) {
     return sum_impl(args...);
 }
 
+template <typename... Args>
+void execute( Args... args ) {}
+
 int main() {
     std::cout << sum(1, 2, 3, 4, 5, 10) << std::endl; // Expect 25
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-template <typename T>
-void execute( T obj ) {
-    obj();
-}
-
-template <typename T, typename... Args>
-void execute( T obj, Args... args ) {
-    obj();
-    execute(args...);
 }
