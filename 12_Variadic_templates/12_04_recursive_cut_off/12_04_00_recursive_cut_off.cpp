@@ -40,10 +40,13 @@ int main() {
 
 
 
-void execute() {}
+template <typename T>
+void execute( T obj ) {
+    obj();
+}
 
 template <typename T, typename... Args>
 void execute( T obj, Args... args ) {
-    T();
+    obj();
     execute(args...);
 }

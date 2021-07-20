@@ -13,4 +13,5 @@ int main() {
     std::tuple<int> t2(1);
 
     std::cout << std::get<0>(t2) << std::endl;
+    std::get<1>(t1);
 }
