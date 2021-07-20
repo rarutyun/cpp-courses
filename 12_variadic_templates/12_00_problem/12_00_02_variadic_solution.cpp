@@ -1,4 +1,4 @@
-// Introduce variadic templates as a solution
+// Variadic templates as a solution
 #include <iostream>
 
 template <std::size_t N>

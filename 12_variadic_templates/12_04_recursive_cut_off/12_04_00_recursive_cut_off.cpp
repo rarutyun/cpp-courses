@@ -1,5 +1,5 @@
-// Describe the revursive cut off for sum
-// Show the solution for execute
+// Describe the recursive cut off for sum
+// Show the solution for `execute`
 #include <iostream>
 
 template <typename T>

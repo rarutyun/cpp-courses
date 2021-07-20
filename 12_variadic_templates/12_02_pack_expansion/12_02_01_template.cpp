@@ -1,4 +1,4 @@
-// print types
+// Print types
 template <typename T>
 struct print;
 
@@ -7,12 +7,10 @@ struct Object {};
 
 template <typename... Args>
 struct ObjectTypes {
-
     using type1 = Object<Args...>;
     using type2 = Object<int, Args...>;
     using type3 = Object<Args..., int>;
     using type4 = Object<int, Args..., int>;
-
 };
 
 int main() {
