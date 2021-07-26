@@ -12,7 +12,7 @@ int main() {
 
     // std::vector<int> v2{10, 0};
 
-    // for (auto& item : v1) {
+    // for (auto& item : v2) {
     //     std::cout << item << std::endl;
     // }
 }

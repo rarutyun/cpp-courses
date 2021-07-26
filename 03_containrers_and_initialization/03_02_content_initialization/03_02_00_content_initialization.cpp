@@ -3,6 +3,7 @@
 //  - pass iterators to the corresponding ctor
 //  - braced initialization
 
+#include <iostream>
 #include <vector>
 
 int main() {
@@ -11,4 +12,8 @@ int main() {
     int c = 3;
 
     std::vector<int> v;
+
+    for (auto& item : v) {
+        std::cout << item << std::endl;
+    }
 }
