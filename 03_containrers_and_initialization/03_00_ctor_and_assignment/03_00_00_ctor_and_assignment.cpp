@@ -5,8 +5,13 @@
 
 struct Widget {
     Widget() = default;
-    Widget( const Widget& ) { std::cout << "Copy ctor\n"; }
-    Widget& operator=( const Widget& ) { std::cout << "Copy assignment\n"; }
+    Widget( const Widget& ) {
+        std::cout << "Copy ctor\n";
+    }
+    Widget& operator=( const Widget& ) {
+        std::cout << "Copy assignment\n"; 
+        return *this;
+    }
 }; // struct Widget
 
 int main() {
