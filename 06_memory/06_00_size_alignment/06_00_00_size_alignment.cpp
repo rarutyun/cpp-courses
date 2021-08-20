@@ -8,7 +8,6 @@
 
 struct A {
     int a;
-    short s;
 };
 
 int main()
