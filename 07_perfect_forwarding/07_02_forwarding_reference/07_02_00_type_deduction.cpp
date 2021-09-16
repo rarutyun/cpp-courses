@@ -4,7 +4,7 @@
 #include <iostream>
 
 template <typename T>
-void foo(T) {
+void foo(T& t) {
     std::cout << __PRETTY_FUNCTION__ << std::endl;
 }
 

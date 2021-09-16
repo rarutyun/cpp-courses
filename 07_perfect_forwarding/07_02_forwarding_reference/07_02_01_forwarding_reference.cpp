@@ -3,6 +3,8 @@
 // Type-deduction context is required
 // Applicable for `auto`
 
+#include <utility>
+
 // rvalue or lvalue ref (const-safe)
 template <typename T>
 void f(T&& t) {
