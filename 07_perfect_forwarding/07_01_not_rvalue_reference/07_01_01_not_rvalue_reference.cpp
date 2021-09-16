@@ -1,7 +1,4 @@
 // Describe that && not always uses in rvalue reference
-
-#include <vector>
-
 struct Some {};
 
 void f1(Some&& rRef) {}
