@@ -1,5 +1,7 @@
 // weak_ptr underneath
 
+#include <cstddef>
+
 struct control_block {
     std::size_t ref_counter;
     std::size_t weak_counter;

@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <cstdio>
+#include <memory>
 
 struct custom_deleter {
     template <typename T>
@@ -24,7 +25,7 @@ int main() {
 
     std::unique_ptr<int, /*what should be here*/> uptr2(new int(2), deleter);
 
-    auto file_close = [](FILE* file) { std::fclose(file); }
+    auto file_close = [](FILE* file) { std::fclose(file); };
 
     std::unique_ptr<FILE, /*what should be here*/> f_uptr(std::fopen("file.txt", "r"), file_close);
 

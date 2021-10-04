@@ -6,7 +6,7 @@ struct widget {/*...*/};
 struct id_type {/*...*/};
 
 // This function can be expensive
-std::unique_ptr<const widget> widget_factory( id_type id ) {/*...*/}
+std::unique_ptr<const widget> widget_factory( id_type id ) {/*...*/};
 
 std::shared_ptr<const widget> widget_factory_with_caching( id_type id ) {
     static std::unordered_map<id_type, std::weak_ptr<const widget>> cache;

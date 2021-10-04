@@ -1,5 +1,7 @@
 // shared_ptr underneath
 
+#include <cstddef>
+
 struct control_block {
     std::size_t ref_counter{};
     // May contain other data
